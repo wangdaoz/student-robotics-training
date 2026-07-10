@@ -8,3 +8,20 @@ Week1 Goals
 7. A `tests/` folder with at least one simple test or manual test procedure.
 8. Daily reports for Monday through Friday.
 9. A weekly report.
+
+Instructions on day2 Hands-On Task
+
+ Create a branch:
+ git checkout -b feature/hello-robot
+ Create `scripts/hello_robot.py`:
+ def main():
+     print("Hello, Berkeley Humanoid Lite software project!")
+
+ if __name__ == "__main__":
+     main()
+ Run it:
+ python scripts/hello_robot.py
+ Update `README.md` with instructions:
+ ## Running the Hello Robot Script
+
+ python scripts/hello_robot.py
