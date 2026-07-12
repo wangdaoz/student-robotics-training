@@ -1,33 +1,54 @@
-Week1 Goals
-1. A GitHub repository with a clean structure.
-2. A `README.md` explaining the project.
-3. A `docs/setup.md` file explaining how the environment was installed.
-4. A `docs/project_structure.md` file explaining the folders.
-5. A `scripts/system_info.py` Python utility.
-6. A `config/example_config.yaml` configuration file.
-7. A `tests/` folder with at least one simple test or manual test procedure.
-8. Daily reports for Monday through Friday.
-9. A weekly report.
+## Today's Goal
 
-Instructions on day2 Hands-On Task
+Build a Python command-line utility using argparse and logging.
 
- Create a branch:
- git checkout -b feature/hello-robot
- Create `scripts/hello_robot.py`:
- def main():
-     print("Hello, Berkeley Humanoid Lite software project!")
+## Completed
 
- if __name__ == "__main__":
-     main()
- Run it:
- python scripts/hello_robot.py
- Update `README.md` with instructions:
- ## Running the Hello Robot Script
+- Created system_info.py
+- Added config example
+- Added manual tests
+- Updated README
+- Opened PR
 
- python scripts/hello_robot.py
+## Problems Encountered
 
- Day 3:
- 1. argparse:
+ when created file "system_info.py", I didn't create in the folder: "scripts"
+
+## How I Solved Them
+
+   After I realiized my error, I created same file in the folder "scripts" and deleted the previous one.
+
+## Claude Code Usage
+
+  What prompts did you use? What did you verify?
+  In the modules: argparse, logging, pathlib, I didn't understand the roles of those functions. I figure out the roles of them and what arguments could be passed.
+
+## What I Learned
+
+   1. Argumentparser object, Argumentparser(xxx,xxx,...), add_argument(...) and parse_args(...) methods
+   
+   2. Why logging?
+       •	It separates normal output from debug information.
+       •	It can include timestamps.
+       •	It can be filtered by level.
+       •	It can later be written to files.
+   3. `pathlib` is the modern way to work with file paths
+       project_root = Path(__file__).resolve().parents[1]
+
+   4. platform module
+   
+   5. https://docs.python.org/ to look up various modules/libraries for different python versions
+
+## Plan for Tomorrow
+
+Improve project documentation.
+
+
+
+
+
+Python Concepts:
+  1. argparse:
    `argparse` lets a Python script accept command-line options.
     E.g. 
         import argparse
@@ -87,3 +108,36 @@ Instructions on day2 Hands-On Task
          logger.info("Starting script")
          logger.warning("This is a warning")
          logger.error("This is an error")
+
+  3. pathlib
+      `pathlib` is the modern way to work with file paths.
+      E.g. 
+         from pathlib import Path
+         """
+         from pathlib import Path — imports the modern, object-oriented path-handling class (preferred over the older os.path string-based functions).
+         Path(__file__)
+          __file__ is a built-in variable that holds the path to the current .py file (as a string, possibly relative).
+         Wrapping it in Path(...) turns it into a Path object so you can use path operations on it.
+         .resolve()
+          Converts the path to an absolute path and resolves any symlinks or ../. segments. So no matter whether the script was run from a different working directory, this gives a clean, fully-qualified path.
+         .parents[1]
+           .parents is a sequence of ancestor directories, indexed from the immediate parent outward.
+           .parents[0] = the directory containing the file
+           .parents[1] = that directory's parent (i.e., one level up)
+            So this walks up two levels from the file itself: once to its containing folder, once more to that folder's parent — which is being treated as the project root.
+             Example: if __file__ is /home/user/project/src/script.py, then:
+
+              .parents[0] → /home/user/project/src
+              .parents[1] → /home/user/project
+         """
+         project_root = Path(__file__).resolve().parents[1]
+         config_path = project_root / "config" / "example_config.yaml"
+
+         print(config_path)
+      Robotics projects have many files:
+      •	config files
+      •	logs
+      •	robot descriptions
+      •	calibration files
+      •	datasets
+      •	simulation assets
