@@ -26,7 +26,7 @@ Instructions on day2 Hands-On Task
 
  python scripts/hello_robot.py
 
- Day 3:
+7-11/12:
  1. argparse:
    `argparse` lets a Python script accept command-line options.
     E.g. 
@@ -87,3 +87,17 @@ Instructions on day2 Hands-On Task
          logger.info("Starting script")
          logger.warning("This is a warning")
          logger.error("This is an error")
+
+## Purpose
+
+## Repository Structure
+
+## Setup
+
+## Running Examples
+
+## Testing
+
+## Current Status
+
+## Next Steps
