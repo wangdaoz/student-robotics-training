@@ -14,10 +14,10 @@ Example configuration files.
 
 Manual or automated tests.
 
-## requirements.txt
+## .venv, requirements.txt
 
 Python dependencies.
-Then add a short section:
+ 
 
 This repository is intentionally simple during Week 1. We avoid unnecessary architecture until the project needs it.
 This teaches restraint. Good engineers avoid over-engineering.
