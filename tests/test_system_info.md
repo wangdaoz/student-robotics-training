@@ -2,7 +2,7 @@
 
 Command:
 
-python3 scripts/system_info.py --name Student --age  Age
+python3 scripts/system_info.py --name Student --age  20
 
 Expected:
 
@@ -17,7 +17,7 @@ Expected:
 
 Command:
 
-python scripts/system_info.py
+python3 scripts/system_info.py
 
 Expected:
 

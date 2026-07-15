@@ -2,26 +2,25 @@
     Learn to design software system for Berkeley Humanoid Lite system
 ## Repository Structure
    
-├── README.md
-├── config/
-│   └── example_config.yaml
-├── docs/
-│   ├── setup.md
-│   ├── project_structure.md
-│   ├── daily_reports/
-│   │   ├── monday.md
-│   │   ├── Tuesday.md
-│   │   ├── wednesday.md
-│   │   ├── thursday.md
-│   │   └── friday.md
-│   └── weekly_report.md
-├── scripts/
-│   └── system_info.py
-    └── hello_robot.py
-├── tests/
-│   └── test_system_info.md
+├── README.md↓
+├── config/↓
+│   └── example_config.yaml↓
+├── docs/↓
+│   ├── setup.md↓
+│   ├── project_structure.md↓
+│   ├── daily_reports/↓
+│   │   ├── monday.md↓
+│   │   ├── Tuesday.md↓
+│   │   ├── wednesday.md↓
+│   │   ├── thursday.md↓
+│   │   └── friday.md↓
+│   └── weekly_report.md↓
+├── scripts/↓
+│   └── system_info.py↓
+    └── hello_robot.py↓
+├── tests/↓
+│   └── test_system_info.md↓
 └── requirements.txt
-
 
 ## Setup
     ## Git
