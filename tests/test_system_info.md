@@ -2,14 +2,16 @@
 
 Command:
 
-python scripts/system_info.py --name Student
+python3 scripts/system_info.py --name Student --age  Age
 
 Expected:
 
 - Program exits without error
-- Output includes "Hello Student"
+- Output includes "Hello Student, your age is Age. Here is your system information:"
 - Output includes Python version
 - Output includes operating system
+- Output includes platform release
+- Output includes platform machine
 
 ## Test 2: Missing Name
 
