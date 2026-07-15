@@ -1,0 +1,68 @@
+By the end of Friday, verify:
+
+ •	[ ] Git installed and configured
+ •	[ ] Python installed
+ •	[ ] VS Code installed
+ •	[ ] Claude Code available
+ •	[ ] GitHub repository created
+ •	[ ] Repository cloned locally
+ •	[ ] README written
+ •	[ ] setup.md written
+ •	[ ] project_structure.md written
+ •	[ ] hello_robot.py written
+ •	[ ] system_info.py written
+ •	[ ] manual tests written
+ •	[ ] at least one PR opened
+ •	[ ] at least one PR merged
+ •	[ ] daily reports completed
+ •	[ ] weekly report completed
+ •	[ ] demo prepared
+
+Code Review Checklist
+ •	[ ] Code runs
+ •	[ ] No obvious debug junk
+ •	[ ] File names are clear
+ •	[ ] Functions have clear names
+ •	[ ] README updated
+ •	[ ] Manual tests included
+ •	[ ] Errors handled reasonably
+ •	[ ] No secrets committed
+ •	[ ] Student understands every line
+ •	[ ] PR description complete
+
+For Week 1 Python code:
+ •	Use a `main()` function.
+ •	Use `if __name__ == "__main__":`.
+ •	Use clear function names.
+ •	Avoid unnecessary global variables.
+ •	Prefer `logging` for status.
+ •	Prefer `argparse` for command-line inputs.
+ •	Keep scripts small.
+ •	Add comments only where helpful.
+ •	Test manually.
+ •	Document how to run the script.
+
+When something breaks, follow this process:
+ 1. Stop and read the full error message.
+ 2. Copy the exact command that caused the error.
+ 3. Copy the exact error text.
+ 4. Write what you expected to happen.
+ 5. Write what actually happened.
+ 6. Search documentation or ask Claude Code for explanation.
+ 7. Try one fix at a time.
+ 8. Record the solution.
+
+If stuck for more than 20 minutes:
+ 1. Write down the exact blocker.
+ 2. Capture command and error.
+ 3. Ask Claude Code to explain the error.
+ 4. Try one reasonable fix.
+ 5. If still stuck, ask mentor with this format:
+ Goal:
+ Command I ran:
+ Expected result:
+ Actual result:
+ Error message:
+ What I tried:
+ My guess:
+ Question:
