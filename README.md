@@ -7,7 +7,8 @@
 │   └── example_config.yaml↓
 ├── docs/↓
 │   ├── setup.md↓
-│   ├── project_structure.md↓
+│   ├── project_structure.md↓   
+|   ├── changelog.md↓
 │   ├── daily_reports/↓
 │   │   ├── monday.md↓
 │   │   ├── Tuesday.md↓
