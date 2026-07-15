@@ -85,7 +85,9 @@
     - Output includes platform machine
 
 ## Current Status
-   The structure of the repository is built.
+   The structure of the repository is built and explained in the file: project_structure.md and README.md.
+   Two scripts can be correctly ran or tested.
+   Daily reports, weekly report are finished.
 
 ## Next Steps
     Prepare for ROS 2
